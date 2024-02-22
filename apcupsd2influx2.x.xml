@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>dev-apcupsd2influx2.x</Name>
+  <Repository>ghcr.io/freeskier93/apcupsd2influx2.x:latest</Repository>
+  <Registry>https://github.com/freeskier93/apcupsd2influx2.x/pkgs/container/apcupsd2influx2.x</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/freeskier93/apcupsd2influx2.x</Project>
+  <Overview>Collects UPS data from APCUPSD and exports it to InfuxDB 2.x for use with Grafana or other data visulization tools.</Overview>
+  <Category>HomeAutomation: Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://img.icons8.com/office/40/database-export.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1708621379</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="APCUPSD_HOST" Target="APCUPSD_HOST" Default="127.0.0.1" Mode="" Description="Hostname/IP where APCUPSD is running" Type="Variable" Display="always" Required="true" Mask="false">127.0.0.1</Config>
+  <Config Name="APCUPSD_NOMINAL_POWER" Target="APCUPSD_NOMINAL_POWER" Default="" Mode="" Description="Nominal power rating of your UPS, required if your UPS does not report NOMPOWER value (watts)" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="INFLUXDB_HOST" Target="INFLUXDB_HOST" Default="127.0.0.1" Mode="" Description="Hostname/IP where InfluxDB is running" Type="Variable" Display="always" Required="true" Mask="false">127.0.0.1</Config>
+  <Config Name="INFLUXDB_TOKEN" Target="INFLUXDB_TOKEN" Default="" Mode="" Description="User generated InfluxDB token" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="INFLUXDB_PORT" Target="INFLUXDB_PORT" Default="8086" Mode="" Description="Port InfluxDB is listening on" Type="Variable" Display="advanced-hide" Required="false" Mask="false">8086</Config>
+  <Config Name="INFLUXDB_BUCKET" Target="INFLUXDB_BUCKET" Default="apcupsd" Mode="" Description="Name of the bucket data will be saved to" Type="Variable" Display="advanced" Required="false" Mask="false">apcupsd</Config>
+  <Config Name="INFLUXDB_MEASUREMENT" Target="INFLUXDB_MEASUREMENT" Default="ups_telemetry&#9;" Mode="" Description="Name of the measurement data will be save to in the bucket" Type="Variable" Display="advanced" Required="false" Mask="false">ups_telemetry</Config>
+  <Config Name="APCUPSD_POLL_RATE" Target="APCUPSD_POLL_RATE" Default="5" Mode="" Description="Rate to poll data from UPS (seconds) WARNING: Poll rate may affect how energy (kWh) and costs are calculated" Type="Variable" Display="advanced" Required="false" Mask="false">5</Config>
+  <Config Name="APCUPSD_PORT" Target="APCUPSD_PORT" Default="3551" Mode="" Description="Port that APCUPSD is listening on" Type="Variable" Display="advanced" Required="false" Mask="false">3551</Config>
+  <Config Name="INFLUXDB_ORG" Target="INFLUXDB_ORG" Default="homelab" Mode="" Description="Organization name" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="DEBUG" Target="DEBUG" Default="false" Mode="" Description="Enable/Disable Debug logging (true/false)" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+</Container>
