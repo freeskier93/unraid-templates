@@ -9,10 +9,10 @@
   <Privileged>false</Privileged>
   <Support/>
   <Project>https://github.com/freeskier93/apcupsd2influx2.x</Project>
-  <Overview>Collects UPS data from APCUPSD and exports it to InfuxDB 2.x for use with Grafana or other data visulization tools.</Overview>
+  <Overview>Collects UPS data from APCUPSD and exports it to InfuxDB 2.x for use with Grafana or other data visulization tools</Overview>
   <Category>HomeAutomation: Tools:</Category>
   <WebUI/>
-  <TemplateURL/>
+  <TemplateURL>https://github.com/freeskier93/unraid-templates/blob/main/apcupsd2influx2.x.xml</TemplatURL>
   <Icon>https://img.icons8.com/office/40/database-export.png</Icon>
   <ExtraParams/>
   <PostArgs/>
