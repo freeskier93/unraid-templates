@@ -23,6 +23,7 @@
   <Requires/>
   <Config Name="APCUPSD_HOST" Target="APCUPSD_HOST" Default="127.0.0.1" Mode="" Description="Hostname/IP where APCUPSD is running" Type="Variable" Display="always" Required="true" Mask="false">127.0.0.1</Config>
   <Config Name="APCUPSD_NOMINAL_POWER" Target="APCUPSD_NOMINAL_POWER" Default="" Mode="" Description="Nominal power rating of your UPS, required if your UPS does not report NOMPOWER value (watts)" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="COST_PER_KWH" Target="COST_PER_KWH" Default="" Mode="" Description="Cost of your energy per kWh" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="INFLUXDB_HOST" Target="INFLUXDB_HOST" Default="127.0.0.1" Mode="" Description="Hostname/IP where InfluxDB is running" Type="Variable" Display="always" Required="true" Mask="false">127.0.0.1</Config>
   <Config Name="INFLUXDB_TOKEN" Target="INFLUXDB_TOKEN" Default="" Mode="" Description="User generated InfluxDB token" Type="Variable" Display="always" Required="true" Mask="true"/>
   <Config Name="INFLUXDB_PORT" Target="INFLUXDB_PORT" Default="8086" Mode="" Description="Port InfluxDB is listening on" Type="Variable" Display="advanced-hide" Required="false" Mask="false">8086</Config>
