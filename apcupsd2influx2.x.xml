@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>dev-apcupsd2influx2.x</Name>
+  <Name>apcupsd2influx2.x</Name>
   <Repository>ghcr.io/freeskier93/apcupsd2influx2.x:latest</Repository>
   <Registry>https://github.com/freeskier93/apcupsd2influx2.x/pkgs/container/apcupsd2influx2.x</Registry>
   <Network>bridge</Network>
