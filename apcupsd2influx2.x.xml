@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/155101-support-apcupsd-to-influxdb-2x/</Support>
   <Project>https://github.com/freeskier93/apcupsd2influx2.x</Project>
   <Overview>Collects UPS data from APCUPSD and exports it to InfuxDB 2.x for use with Grafana or other data visulization tools</Overview>
   <Category>HomeAutomation: Tools:</Category>
